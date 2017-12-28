@@ -1,0 +1,98 @@
+/*header.wrapper{
+	width: 100%;
+	height: 100%;
+}
+.header{
+	width: calc(100% - 100px);
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+.logo{
+	width: 300px;
+	height: 200px;
+	background-color: black;
+}
+.nav{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}
+.date-wrapper{
+	display: flex;
+	justify-content: flex-end;
+}*/
+.header-wrapper{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.header-wrapper .logo{
+    display: inline;
+    position: relative;
+    left: 29.4663px;
+    top: 21.2494px;
+}
+.header-wrapper .menu{
+    display: inline;
+    position: relative;
+    float: right;
+    right: 15px;
+    top: 21.2494px;
+}
+.logo img{
+/*    background-color: black;*/
+    width: 411.2515px;
+    height: 156.3408px;
+}
+.menu{
+    width: 60px;
+    height: 50px;
+}
+.menu .menubar1{
+    width: 45px;
+    height: 6px;
+}
+.menu .menubar2{
+    width: 40px;
+    height: 6px;
+  }
+.menu .menubar3{
+    width: 45px;
+    height: 6px;
+  }
+
+
+.slider{
+    width: 100%;
+    height: 100%;
+}
+
+.customPrevBtn {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: -550px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f6d79;
+}
+
+.customNextBtn {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: -550px;
+    z-index: 999;
+    display: flex;
+    transform: translate(1183px);
+    justify-content: center;
+    align-items: center;
+    background-color: #4f6d79;
+}
