@@ -1,28 +1,4 @@
-/*header.wrapper{
-	width: 100%;
-	height: 100%;
-}
-.header{
-	width: calc(100% - 100px);
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	padding-top: 20px;
-}
-.logo{
-	width: 300px;
-	height: 200px;
-	background-color: black;
-}
-.nav{
-	width: 50px;
-	height: 50px;
-	background-color: red;
-}
-.date-wrapper{
-	display: flex;
-	justify-content: flex-end;
-}*/
+
 .header-wrapper{
     width: 100%;
     position: absolute;
@@ -30,22 +6,23 @@
     justify-content: space-between;
 }
 .header-wrapper .logo{
-    display: inline;
-    position: relative;
+    position: absolute;
+    z-index: 999;
     left: 29.4663px;
     top: 21.2494px;
 }
 .header-wrapper .menu{
     display: inline;
-    position: relative;
+    position: absolute;
+    z-index: 999;
     float: right;
     right: 15px;
     top: 21.2494px;
 }
 .logo img{
 /*    background-color: black;*/
-    width: 411.2515px;
-    height: 156.3408px;
+    width: 300px;
+    height: 125px;
 }
 .menu{
     width: 60px;
@@ -65,34 +42,74 @@
   }
 
 
-.slider{
+/*.slider{
     width: 100%;
     height: 100%;
 }
-
+*/
 .customPrevBtn {
     cursor: pointer;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    margin-top: -550px;
-    z-index: 999;
-    display: flex;
+    width: 104px;
+    height: 208px;
     justify-content: center;
     align-items: center;
-    background-color: #4f6d79;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    top: 50%;
+    bottom: 50%;
+    border-radius: 0px 100px 100px 0px;
 }
 
 .customNextBtn {
     cursor: pointer;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    margin-top: -550px;
-    z-index: 999;
+    width: 104px;
+    height: 208px;
     display: flex;
-    transform: translate(1183px);
+    transform: translate(1240px);
     justify-content: center;
     align-items: center;
-    background-color: #4f6d79;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    z-index: 999;
+    align-items: center;
+    border-radius: 100px 0px 0px 100px;
+
+}
+/*.owl-nav{
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+}*/
+.item {
+    height: 100vh;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    right: 55px;
+    bottom: 58px;
+    position: absolute;
+    z-index: 999;
+}
+.about >div {
+    position: absolute;
+    z-index: 999;
+}
+.about .time-heading time{
+    color: white;
+    font-size: 72pt;
+}
+.about .time-heading h1{
+    color: white;
+    font-size: 39,49pt;
 }
