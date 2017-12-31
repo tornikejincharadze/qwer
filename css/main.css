@@ -1,9 +1,16 @@
-
+@font-face{
+    font-family: RobotoCondensed-Bold;
+    src:url(../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face{
+    font-family: Roboto-Light;
+    src:url(../fonts/Roboto-Light.ttf);
+}
 .header-wrapper{
     width: 100%;
-    position: absolute;
+/*
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 .header-wrapper .logo{
     position: absolute;
@@ -12,12 +19,17 @@
     top: 21.2494px;
 }
 .header-wrapper .menu{
-    display: inline;
     position: absolute;
     z-index: 999;
-    float: right;
     right: 15px;
     top: 21.2494px;
+}
+.header-wrapper .menu button{
+    background-color: transparent;
+    border: none;
+}
+.header-wrapper .menu button:active{
+    background-color: red;
 }
 .logo img{
 /*    background-color: black;*/
@@ -41,12 +53,6 @@
     height: 6px;
   }
 
-
-/*.slider{
-    width: 100%;
-    height: 100%;
-}
-*/
 .customPrevBtn {
     cursor: pointer;
     width: 104px;
@@ -67,7 +73,7 @@
     width: 104px;
     height: 208px;
     display: flex;
-    transform: translate(1240px);
+    transform: translate(1245px);
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
@@ -79,37 +85,30 @@
     border-radius: 100px 0px 0px 100px;
 
 }
-/*.owl-nav{
-    width: 100%;
-    display: none;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    position: absolute;
-    z-index: 999;
-}*/
-.item {
+/*.item img{
     height: 100vh;
 }
-
-.about{
-    width: 100%;
+*/
+.time-heading-wrapper{
     display: flex;
     justify-content: flex-end;
-    right: 55px;
-    bottom: 58px;
-    position: absolute;
+    width: 100%;
+}
+.time-heading{
+    position:absolute;
     z-index: 999;
+    bottom: -60px;
+    right: 30px;
 }
-.about >div {
-    position: absolute;
-    z-index: 999;
-}
-.about .time-heading time{
+.time-heading ul li time{
+    float: right;
     color: white;
-    font-size: 72pt;
+    font-family: RobotoCondensed-Bold;
+    font-size: 35pt;
 }
-.about .time-heading h1{
+.time-heading ul li h1{
+    float: right;
     color: white;
-    font-size: 39,49pt;
+    font-family: Roboto-Light;
+    font-size: 35pt;
 }
