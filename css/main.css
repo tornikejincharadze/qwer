@@ -55,8 +55,8 @@
 
 .customPrevBtn {
     cursor: pointer;
-    width: 104px;
-    height: 208px;
+    width: 100px;
+    height: 200px;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
@@ -70,8 +70,8 @@
 
 .customNextBtn {
     cursor: pointer;
-    width: 104px;
-    height: 208px;
+    width: 100px;
+    height: 200px;
     display: flex;
     transform: translate(1245px);
     justify-content: center;
