@@ -31,3 +31,7 @@ $(document).ready(function () {
 
 
 });
+// $(document).ready(function(){
+//     $("button").click(function(){
+//         $(".logo").hide();
+//     });

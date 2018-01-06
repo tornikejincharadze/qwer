@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Home | მთავარი</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,22 +12,23 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 
+    <script src="js/jquery-3.2.1.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+
+    <script src="js/menu-button.js"></script>
     <script src="js/owl.carousel.min.js"></script>
 	<script src="js/js.js"></script>
-	
-
 </head>
 <body>
 <header>
-	<div class="header-wrapper">
+	<div class="header-wrapper" id="home">
 		<div class="logo">
 			<a href="">
-				<img src="image/banner.png">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.25 189.82"><defs><style>.cls-1{fill:#fff;}</style></defs><title>asdAsset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M72,47.5l37.1,140.16H79.7L73.22,158H35.92l-6.48,29.64H0L37.1,47.5Zm-3.73,87.35-13.54-63h-.39l-13.55,63Z"/><path class="cls-1" d="M145.46,145.26a63.3,63.3,0,0,0,.69,9.72,21.7,21.7,0,0,0,2.55,7.65,13.57,13.57,0,0,0,5.1,5.1,18.91,18.91,0,0,0,16.4,0,13.9,13.9,0,0,0,5-5.1,22.11,22.11,0,0,0,2.55-7.65,63.3,63.3,0,0,0,.69-9.72V47.5h28.27v97.76q0,13.35-3.73,22.08a35.27,35.27,0,0,1-10,13.84,33.9,33.9,0,0,1-14.34,6.87A77.37,77.37,0,0,1,162,189.82a87.57,87.57,0,0,1-16.69-1.57,33.94,33.94,0,0,1-14.33-6.38,32.81,32.81,0,0,1-10-13.64q-3.73-8.83-3.73-23V47.5h28.27Z"/><path class="cls-1" d="M306.62,70.66H276v117H247.73v-117H217.11V47.5h89.51Z"/><path class="cls-1" d="M317.32,88.23q1.47-13.44,6.48-23.06a36.32,36.32,0,0,1,14.43-15q9.42-5.4,25.32-5.4t25.32,5.4a36.26,36.26,0,0,1,14.43,15q5,9.61,6.48,23.06a271.25,271.25,0,0,1,1.47,29.35A270.5,270.5,0,0,1,409.78,147a64.72,64.72,0,0,1-6.48,23,34.43,34.43,0,0,1-14.43,14.73q-9.42,5.1-25.32,5.1t-25.32-5.1A34.48,34.48,0,0,1,323.8,170a64.72,64.72,0,0,1-6.48-23,270.5,270.5,0,0,1-1.47-29.45A271.25,271.25,0,0,1,317.32,88.23Zm27.48,53.4a67,67,0,0,0,2.75,16.09c1.38,4.12,3.34,7.14,5.89,9s5.92,2.85,10.11,2.85,7.56-.95,10.11-2.85,4.51-4.91,5.89-9a67,67,0,0,0,2.75-16.09q.68-9.91.68-24t-.68-24a68.36,68.36,0,0,0-2.75-16.1q-2.07-6.27-5.89-9.12t-10.11-2.85q-6.29,0-10.11,2.85t-5.89,9.12a68.36,68.36,0,0,0-2.75,16.1q-.69,9.83-.68,24T344.8,141.63Z"/><circle class="cls-1" cx="261.62" cy="16.58" r="16.58"/></g></g></svg>
 			</a>
 		</div>
 		<div class="menu">
-			<button>
+			<button class="nav-open">
 				<div>
 					<img class="menu-bar1" src="image/menu-bar1.png" />
 				</div>
@@ -38,43 +39,102 @@
 					<img class="menu-bar3" src="image/menu-bar3.png" />
 				</div>
 			</button>
+			<button class="nav-exit">
+				<div>
+					<img src="image/Asset 2.png">
+				</div>
+				<div>
+					<img src="image/Asset 3.png">
+				</div>
+			</button>
 		</div>
+		<nav class="navigation-bar">
+			<div class="nav-wrapper">
+				<ul>
+					<!-- <li><a href="" id="home">HOME</a></li>
+					<li><a href="" id="services">SERVICES</a></li>
+					<li><a href="" id="contact">CONTACT</a></li> -->
+					<li><button id="homeB">HOME</button></li>
+					<li><button id="servicesB">SERVICES</button></li>
+					<li><button id="contactB">CONTACT</button></li>
+				</ul>
+			</div>
+		</nav>
 	</div>
 </header>
 <section class="slider-wrapper">
 	<div class="slider">
 		<div class="owl-carousel owl-theme" id="owlcc">
 	   		 <div class="item">
-	            <img src="image/slider1.jpg" />
+						<ul>
+							<li><img src="image/slider1.jpg" /></li>
+							<li class="t-li"><time>29.12.</time></li>
+							<li class="h-li"><h1>Vintage Auto Exhibition</h1></li>
+						</ul>
 	         </div>
 	         <div class="item">
-	         	<img src="image/slider1.jpg" />
+	         			<ul>
+							<li><img src="image/slider1.jpg" /></li>
+							<li class="t-li"><time>29.12.</time></li>
+							<li class="h-li"><h1>Vintage Auto Exhibition</h1></li>
+						</ul>
 	         </div>
 	         <div class="item">
-	            <img src="image/slider1.jpg" />
+	         		     <ul>
+							<li><img src="image/slider1.jpg" /></li>
+							<li class="t-li"><time>29.12.</time></li>
+							<li class="h-li"><h1>Vintage Auto Exhibition</h1></li>
+						</ul>
 	         </div>
 	         <div class="item">
-	            <img src="image/slider1.jpg" />
+	            		<ul>
+							<li><img src="image/slider1.jpg" /></li>
+							<li class="t-li"><time>29.12.</time></li>
+							<li class="h-li"><h1>Vintage Auto Exhibition</h1></li>
+						</ul>
 	         </div>
 		</div>
-	    <!-- <div class="owl-nav">
-	    	<div class="customPrevBtn">
-	     		<img src="image/left-arrow.png" />
-	    	</div>
-	        <div class="customNextBtn">
-	        	<img src="image/right-arrow.png" />
-	        </div>
-	    </div> -->
-	</div>
-<div class="time-heading-wrapper">
-	<div class="time-heading">
-		<ul>
-			<li><time>29.12.2017</time></li>
-			<li><h1>Vintage Auto Exhibition</h1></li>
-		</ul>
-	</div>
-</div>
+	</div>	
 </section>
+<section class="services" id="services">
+	<div class="heading">
+		<h1>The corner garage for collector cars</h1>
+	</div>
+	<div class="services-bar">
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.91 133.92"><defs><style>.cls-1{fill:red;}</style></defs><title>sssAsset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M33.25,133.92a33.29,33.29,0,0,1-12.15-2.3,5.15,5.15,0,0,1-1.76-8.44l14.23-14.23a.46.46,0,0,0,0-.66l-7.95-7.95a.46.46,0,0,0-.66,0L10.74,114.57a5.15,5.15,0,0,1-8.44-1.76A33.24,33.24,0,0,1,42.1,68.63L68.64,42.09A33.22,33.22,0,0,1,112.8,2.3a5.15,5.15,0,0,1,1.76,8.44L100.34,25a.46.46,0,0,0,0,.66l7.95,7.95a.47.47,0,0,0,.66,0l14.23-14.23a5.15,5.15,0,0,1,8.44,1.76A33.24,33.24,0,0,1,91.81,65.28L65.26,91.83a33.22,33.22,0,0,1-32,42.09Zm-8-44a10.7,10.7,0,0,1,7.62,3.16L40.86,101a10.77,10.77,0,0,1,0,15.23l-7.38,7.38a22.93,22.93,0,0,0,21.1-31.32,5.15,5.15,0,0,1,1.16-5.51l31-31a5.16,5.16,0,0,1,5.52-1.16A22.93,22.93,0,0,0,123.6,33.49l-7.37,7.37a10.77,10.77,0,0,1-15.23,0l-7.95-7.95a10.77,10.77,0,0,1,0-15.23l7.38-7.38A22.93,22.93,0,0,0,79.33,41.63a5.15,5.15,0,0,1-1.16,5.51l-31,31a5.15,5.15,0,0,1-5.52,1.16,22.93,22.93,0,0,0-31.31,21.11l7.37-7.37A10.7,10.7,0,0,1,25.3,89.9Z"/></g></g>
+			</svg>
+			<a href=""><h2>MODIFY</h2></a>
+		</div>
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.27 147.49"><defs><style>.cls-1{fill:red;}</style></defs><title>asAsset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M157.18,88.7l-30.25-4.08-14.78-26A22.84,22.84,0,0,0,92.61,47.24H53.19A22.62,22.62,0,0,0,31.95,62L24,84.11,3.91,88.36A4.93,4.93,0,0,0,0,93.29V122a4.93,4.93,0,0,0,4.93,4.93H16.82a22.33,22.33,0,0,0,44.52,0H99.92a22.33,22.33,0,0,0,44.52,0h11.89a4.93,4.93,0,0,0,4.93-4.93V93.63A4.68,4.68,0,0,0,157.18,88.7ZM39.08,137a11.72,11.72,0,1,1,11.72-11.72A11.75,11.75,0,0,1,39.08,137Zm1.19-53a1.09,1.09,0,0,1-1-1.36L45,67a8.43,8.43,0,0,1,8-5.61h7a1,1,0,0,1,1,.85l1.87,20.73a1,1,0,0,1-1,1Zm37-.85L75.45,62.36a1,1,0,0,1,1-1H92.61a8.85,8.85,0,0,1,7.48,4.25l9.69,16.82a1.06,1.06,0,0,1-.85,1.53H78.16A.8.8,0,0,1,77.32,83.09Zm45,53.87a11.72,11.72,0,1,1,11.72-11.72A11.75,11.75,0,0,1,122.35,137Z"/><path class="cls-1" d="M47.07,35.17A17.5,17.5,0,0,0,63.55,23.62h5.61c.17,0,.51.17.68.17l3.23,2.89a.64.64,0,0,0,1,0l4.76-4.25a.64.64,0,0,1,1,0l4.76,4.25a.64.64,0,0,0,1,0l4.76-4.25a.64.64,0,0,1,1,0l4.76,4.25a.64.64,0,0,0,1,0l3.23-2.89c.17-.17.34-.17.68-.17H105a1.3,1.3,0,0,0,.85-.34l4.08-5.1a1,1,0,0,0,0-1.36l-4.08-5.1a1.3,1.3,0,0,0-.85-.34H63.55A17.65,17.65,0,0,0,29.4,17.67,17.51,17.51,0,0,0,47.07,35.17Zm-6.8-21.58a3.91,3.91,0,1,1-3.91,3.91A3.85,3.85,0,0,1,40.27,13.59Z"/></g></g>
+			</svg>
+			<a href=""><h2>BUY</h2></a>
+		</div>
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.97 122.01"><defs><style>.cls-1{fill:red;}</style></defs><title>mmAsset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M59.47,30.4A30.61,30.61,0,1,0,90.08,61,30.61,30.61,0,0,0,59.47,30.4Zm0,51A20.44,20.44,0,1,1,79.92,61,20.44,20.44,0,0,1,59.47,81.44Z"/><path class="cls-1" d="M116,71.71l-9.58-7.5c.08-1,.13-2.07.13-3.2a25.84,25.84,0,0,0-.13-3.2L116,50.29a7.92,7.92,0,0,0,1.92-10.17L106.73,20.87a7.92,7.92,0,0,0-9.57-3.51H97L85.69,21.91a46.14,46.14,0,0,0-5.52-3.2L78.44,6.8A7.82,7.82,0,0,0,70.66,0H48.29a7.8,7.8,0,0,0-7.78,6.71L38.79,18.77A47.48,47.48,0,0,0,33.3,22L21.86,17.4a7.8,7.8,0,0,0-9.67,3.42L1.08,40.14A7.89,7.89,0,0,0,3,50.31l9.58,7.5a25.54,25.54,0,0,0-.14,3.2,28.08,28.08,0,0,0,.13,3.2L3,71.72a7.89,7.89,0,0,0-2,10v.11l11.12,19.24a7.92,7.92,0,0,0,9.61,3.57h.15l11.32-4.55a46.29,46.29,0,0,0,5.52,3.2l1.72,12A7.83,7.83,0,0,0,48.29,122H70.66a7.8,7.8,0,0,0,7.78-6.71l1.73-12.06a47.61,47.61,0,0,0,5.5-3.2l11.44,4.58a7.84,7.84,0,0,0,9.68-3.46l11.13-19.43A7.89,7.89,0,0,0,116,71.71ZM98.87,94.4l-12-4.83a5.08,5.08,0,0,0-4.94.65,37.65,37.65,0,0,1-8.32,4.84,5.08,5.08,0,0,0-3.1,4l-1.82,12.81H50.3L48.46,99a5.08,5.08,0,0,0-3.1-4,35.59,35.59,0,0,1-8.29-4.82,5.08,5.08,0,0,0-5-.69l-12,4.84L10.85,78.47l10.17-8a5.08,5.08,0,0,0,1.91-4.64,35.07,35.07,0,0,1,0-9.7,5.08,5.08,0,0,0-1.91-4.64l-10.17-8,9.18-15.91,12,4.83A5.08,5.08,0,0,0,37,31.77a37.67,37.67,0,0,1,8.32-4.84,5.08,5.08,0,0,0,3.1-4l1.83-12.79H68.65L70.48,23a5.08,5.08,0,0,0,3.1,4,35.59,35.59,0,0,1,8.3,4.82,5.08,5.08,0,0,0,5,.69l12-4.84,9.2,15.93-10.17,8A5.08,5.08,0,0,0,96,56.16a34.43,34.43,0,0,1,0,9.7,5.08,5.08,0,0,0,1.91,4.64l10.17,8Z"/></g></g>
+				</svg>
+				<a href=""><h2>REPAIR</h2></a>
+		</div>
+		<!-- <div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div> -->
+	</div>
+<div class="bus-animation-wrapper">
+		<div class="mountains">
+			<div class="trees">
+				<img src="image/trees.png">
+			</div>
+		</div>
+		<div class="road">
+			<div class="bus">
+				<img src="image/Asset 2.svg">
+			</div>
+		</div>
+</div>
+</section> 
 
 </body>
 </html>
