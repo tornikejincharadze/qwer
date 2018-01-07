@@ -6,7 +6,12 @@
     font-family: Roboto-Light;
     src:url(../fonts/Roboto-Light.ttf);
 }
+@font-face{
+    font-family: Roboto-Thin;
+    src:url(../fonts/Roboto-Thin.ttf);
+}
 
+        /*  Section header Start*/
 .header-wrapper{
     width: 100%;
 }
@@ -142,7 +147,8 @@
 button:active { 
     outline: none 
 }
-/*  Section services start */
+        /*  Section header End */
+        /*  Section services start */
 .services{
     width: 100%;
 }
@@ -153,8 +159,9 @@ button:active {
     text-transform: uppercase;
     text-align: center;
     line-height: 100%;
-    font-size: 50.15px;
+    font-size: 30pt;
     font-family: RobotoCondensed-Bold;
+    letter-spacing:10px;
 }
 
 .services-bar {
@@ -170,7 +177,16 @@ button:active {
     height: 280px;
     margin-bottom: 20px;
 }
-.services .services-bar  svg{
+/*.services .services-bar  svg{
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}*/
+.services .services-bar  img{
     display: block;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -181,7 +197,9 @@ button:active {
 }
 .services .services-bar h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 30pt;
+    font-family: RobotoCondensed-Bold;
+    letter-spacing:5px;
 }
 .services .services-bar a{
     text-decoration: none;
@@ -205,7 +223,7 @@ button:active {
     bottom: 0px;
 }
 .trees img{
-    width: 70%;
+    width: 80%;
     vertical-align: middle;
     border-style: none;
 }
@@ -234,4 +252,212 @@ button:active {
     from { right: 0px; }
     to {right: 120%;}
 }
-/*Section services end */
+        /*Section services end */
+        /*Section contact start*/
+.map{
+    width: 95%;
+    height: 700px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.contact{
+    width: 1050px;
+    height: 450px;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 999;
+    margin-top: -380px;
+    position: relative;
+    box-sizing: border-box;
+}
+/*.contact-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}*/
+.contact .contact-information{    
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    background-color: #EBE8DE;
+}
+.contact .contact-information div:first-child{
+    flex:1;
+}
+.contact .contact-information div:first-child h1{
+    margin-left: 50px;
+    margin-top: 40px;
+    color: black;
+    font-family:RobotoCondensed-Bold;
+    text-transform: uppercase;
+    font-size: 30pt;
+    letter-spacing:1px;
+}
+.contact .contact-information div:nth-child(2){
+    flex:1;
+}
+.contact .contact-information div:nth-child(2) h2{
+    flex:1;
+    font-family:RobotoCondensed-Bold;
+    font-size: 30pt;
+    color: black;
+    width: 150px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+.contact .contact-information ul {
+    display: inline-block;
+    margin-left: 75px;
+    margin-top: 30px;
+}
+.contact .contact-information ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.contact .contact-information img{
+    width: 50px;
+    height: 50px;
+}
+
+.blank form{
+    margin-top: 15px;
+    display:    flex;
+}
+.contact .blank{
+    flex: 2;
+    background-color: white; 
+    display:flex;
+    flex-direction:column;
+}
+.contact .blank div h1{
+    font-family:RobotoCondensed-Bold;
+    font-size: 30pt;
+    color: black;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    letter-spacing:10px;
+}
+.contact .blank .text-input {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.contact .blank .text-input *{
+    height: 30px;
+    width:  225px;
+    margin-bottom: 20px;
+    padding: 0px;
+    border:  0px;
+    background-color: #EBE8DE;
+}
+.contact .blank .text-input input{
+    padding-left: 15px;
+}
+.contact .blank .text-input textarea{
+    padding-left: 15px;
+    height: 100px;
+    resize: none;
+}
+::-webkit-textarea-placeholder {
+    color:  black;
+    margin-left: 20px;
+}
+::-webkit-input-placeholder {
+    color:  black;
+    margin-left: 20px;
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+
+
+
+.information-input {
+    display: flex;
+    flex-direction: column;
+}
+.information-input .gender-input{
+    margin-left: 50px;
+    align-items: center;
+    flex: 1;
+}
+.information-input .gender-input input:first-child{
+    margin-right: 15px;
+}
+.information-input .gender-input input:nth-child(2){
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+.recieve-information{
+    flex:2;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.recieve-information   h2{
+    font-size: 16pt;
+    font-family: Roboto-Light;
+    word-spacing: 1px;
+}
+.recieve-information ul li{
+    margin-bottom: 13px;
+}
+
+.recieve-information ul li input {
+    margin-right: 15px;
+}
+.contact .blank input[type="submit"]{
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 0px;
+    padding: 0px;
+    position: relative;
+    left: 250px;
+    top: 40px;
+} 
+        /*Section contact End*/
+        /*Section footer Start*/
+footer{
+    margin-top: 15px;
+    width: 100%;
+}
+.footer-wrapper{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16pt;
+    font-family: Roboto-Thin;
+}
+        /*responsive share for start*/
+.share-for-responsive {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
+.share-for-responsive div{
+    margin-top: 10px;
+    flex: 1;
+}
+.share-for-responsive div h2 {
+    color: black;
+    font-family:RobotoCondensed-Bold;
+    text-transform: lowercase;
+    font-size: 30pt;
+}
+.share-for-responsive ul li a img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+        /*responsive share for end*/
